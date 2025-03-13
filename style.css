@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+.container {
+    width: 500px;
+    height: 300px;
+    border: 2px solid black;
+    margin: 4rem auto;
+}
+
+.cactus {
+    width: 43px;
+    height: 69px;
+}
+
+.block {
+    width: 30px;
+    height: 60px;
+    position: relative;
+    top: 241px;
+    left: 460px;
+
+    animation-name: moveBlock;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes moveBlock {
+    0% {
+        left: 446px;
+    }
+
+    100% {
+        left: 0px;
+    }
+}
+
+#dinobhai {
+    width: 109px;
+    height: 107px;
+    position: relative;
+    top: 153px;
+    left: -21px;
+}
+
+.result {
+    width: 300px;
+    height: 150px;
+    border-radius: 8px;
+    background-color: darkorange;
+    text-align: center;
+    margin: 3rem auto;
+    display: none;
+}
+
+#btn {
+    font-size: 20px;
+    padding: 8px;
+    color: white;
+    background-color: royalblue;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+#score {
+    font-size: 20px;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
